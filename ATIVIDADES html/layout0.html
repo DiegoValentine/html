@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="lEO.png"  type="imagem/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout YouTube com Flexbox</title>
+    <link rel="stylesheet" type="text/css" href="para0.css">
+</head>
+<body>
+
+    <!-- Barra de Navegação -->
+    <header class="header">
+        <div class="logo">YouTube</div>
+        <div class="search">
+            <input type="text" placeholder="Buscar...">
+        </div>
+        <div class="menu">
+            <a href="https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dpt%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fyoutube&hl=pt-BR&ec=65620"><button >Login</button></a>
+        </div>
+    </header>
+
+    <!-- Corpo da Página -->
+    <div class="container">
+        
+        <!-- Barra Lateral -->
+        <aside class="sidebar">
+            <ul>
+                <a href="https://www.youtube.com/">Início</a>
+                <li>Em alta</li>
+                <li>Inscrições</li>
+                <li>Biblioteca</li>
+            </ul>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <div class="video">
+                <img src="https://via.placeholder.com/640x360" alt="Thumbnail 1" targer=""  >
+                <h3>Título do Vídeo 1</h3>
+            </div>
+            <div class="video">
+                <img src="https://via.placeholder.com/640x360" alt="Thumbnail 2">
+                <h3>Título do Vídeo 2</h3>
+            </div>
+            <div class="video">
+                <video src="picapau.mp4" controls autoplay></video>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+
+                <h3>COMO NÃO PROGAMA LAYOUT</h3>
+            </div>
+            <div class="video">
+                <img src="lEO.jpg" alt="Thumbnail 4">
+                <h3>PAI DE ATHUR</h3>
+            </div>
+        </main>
+
+        <!-- Barra Lateral de Sugestões -->
+        <aside class="suggestions">
+            <h3>Vídeos Recomendados</h3>
+            <div class="suggestion-item">Sugestão 1</div>
+            <div class="suggestion-item">Sugestão 2</div>
+            <div class="suggestion-item">Sugestão 3</div>
+        </aside>
+    </div>
+
+</body>
+</html>

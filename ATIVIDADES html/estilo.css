@@ -1,0 +1,72 @@
+* {
+    font-family: 'Inter', sans-serif;
+    color: #fff;    
+    box-sizing: border-box; /* Para incluir padding e border nas dimensões */
+}
+
+body {
+    background-color: #1100ff;
+    margin: 0; /* Remove margens padrão do body */
+    display: flex; /* Para centralizar o conteúdo */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Faz com que ocupe toda a altura da tela */
+    overflow: hidden; /* Esconde o overflow para animações */
+    animation: fade-in 0.5s ease-out; /* Animação de entrada do body */
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0; /* Começa invisível */
+    }
+    to {
+        opacity: 1; /* Termina visível */
+    }
+}
+
+div {
+    background-color: black;
+    width: 400px;
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    padding: 30px 50px;
+    margin: 20px; /* Reduz a margem */
+    border-radius: 20px; /* Adiciona bordas arredondadas ao div */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao div */
+    transform: translateY(-50px); /* Inicia acima da posição final */
+    opacity: 0; /* Começa invisível */
+    animation: slide-in 0.5s ease-out forwards; /* Animação de deslizamento */
+}
+
+@keyframes slide-in {
+    to {
+        transform: translateY(0); /* Termina na posição final */
+        opacity: 1; /* Termina visível */
+    }
+}
+
+h1, p {
+    padding: 15px 0; /* Ajusta o padding apenas vertical */
+    transition: color 0.3s ease; /* Transição suave para a cor */
+}
+
+h1 {
+    border: 5px solid #fff; /* Reduz a largura da borda */
+    border-radius: 30px; /* Reduz a curvatura das bordas */
+    text-align: center; /* Centraliza o texto do h1 */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do h1 */
+}
+
+h1:hover {
+    color: #ffcc00; /* Muda a cor ao passar o mouse */
+}
+
+p {
+    text-align: justify; /* Justifica o texto do parágrafo */
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+}
+
+p:hover {
+    color: #ffcc00; /* Muda a cor ao passar o mouse */
+    transform: scale(1.02); /* Leve aumento ao passar o mouse */
+    transition: transform 0.3s ease; /* Transição suave para o aumento */
+}
